@@ -1,121 +1,734 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>小孙同学</title>
-    <meta name="language" content="zh-CN" />
-    <meta name="title" content="小孙同学" />
-    <meta
-      name="github"
-      content="https://github.com/sun0225SUN/Awesome-Love-Code"
-    />
-    <meta
-      name="describe"
-      content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! "
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Quotation for Ali ELGOUTNI</title>
     <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: rgb(255, 192, 203);
-      }
-
-      .container {
-        color: white;
-        text-align: center;
-        width: 500px;
-        height: 600px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <canvas id="c"></canvas>
-      <script>
-        var b = document.body;
-        var c = document.getElementsByTagName("canvas")[0];
-        var a = c.getContext("2d");
-        document.body.clientWidth;
-      </script>
-      <script>
-        with ((m = Math)) (C = cos), (S = sin), (P = pow), (R = random);
-        c.width = c.height = f = 600;
-        h = -250;
-        function p(a, b, c) {
-          if (c > 60)
-            return [
-              S(a * 7) * (13 + 5 / (0.2 + P(b * 4, 4))) - S(b) * 50,
-              b * f + 50,
-              625 + C(a * 7) * (13 + 5 / (0.2 + P(b * 4, 4))) + b * 400,
-              a * 1 - b / 2,
-              a,
-            ];
-          A = a * 2 - 1;
-          B = b * 2 - 1;
-          if (A * A + B * B < 1) {
-            if (c > 37) {
-              n = (j = c & 1) ? 6 : 4;
-              o = 0.5 / (a + 0.01) + C(b * 125) * 3 - a * 300;
-              w = b * h;
-              return [
-                o * C(n) + w * S(n) + j * 610 - 390,
-                o * S(n) - w * C(n) + 550 - j * 350,
-                1180 + C(B + A) * 99 - j * 300,
-                0.4 -
-                  a * 0.1 +
-                  P(1 - B * B, -h * 6) * 0.15 -
-                  a * b * 0.4 +
-                  C(a + b) / 5 +
-                  P(C((o * (a + 1) + (B > 0 ? w : -w)) / 25), 30) *
-                    0.1 *
-                    (1 - B * B),
-                o / 1e3 + 0.7 - o * w * 3e-6,
-              ];
-            }
-            if (c > 32) {
-              c = c * 1.16 - 0.15;
-              o = a * 45 - 20;
-              w = b * b * h;
-              z = o * S(c) + w * C(c) + 620;
-              return [
-                o * C(c) - w * S(c),
-                28 + C(B * 0.5) * 99 - b * b * b * 60 - z / 2 - h,
-                z,
-                (b * b * 0.3 + P(1 - A * A, 7) * 0.15 + 0.3) * b,
-                b * 0.7,
-              ];
-            }
-            o = A * (2 - b) * (80 - c * 2);
-            w =
-              99 -
-              C(A) * 120 -
-              C(b) * (-h - c * 4.9) +
-              C(P(1 - b, 7)) * 50 +
-              c * 2;
-            z = o * S(c) + w * C(c) + 700;
-            return [
-              o * C(c) - w * S(c),
-              B * 99 - C(P(b, 7)) * 50 - c / 3 - z / 1.35 + 450,
-              z,
-              (1 - b / 1.2) * 0.9 + a * 0.1,
-              P(1 - b, 20) / 4 + 0.05,
-            ];
-          }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
         }
-        setInterval(
-          'for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',
-          0
-        );
-      </script>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+        .header h1 {
+            color: #007bff;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .customer-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .product-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .product-content {
+            padding: 20px;
+        }
+        .media-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        .image-section, .video-section {
+            flex: 1;
+        }
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .product-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .detail-item {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .detail-label {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #28a745;
+            font-weight: bold;
+            text-align: center;
+            background-color: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
+        .product-description {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .product-description h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+            font-size: 16px;
+        }
+        
+        .product-description p {
+            margin: 0;
+            line-height: 1.6;
+            color: #34495e;
+        }
+        
+        .specifications {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .specifications h4 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-size: 16px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .terms {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .terms h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        .total-section {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .total-price {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .media-container {
+                flex-direction: column;
+            }
+            .product-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Product Quotation</h1>
+            <p>Professional Post-Press Machinery Solutions</p>
+        </div>
+        
+        <div class="customer-info">
+            <h3>Customer Information</h3>
+            <p><strong>Customer Name:</strong> Ali ELGOUTNI</p>
+            <p><strong>Date:</strong> <script>document.write(new Date().toLocaleDateString());</script></p>
+            <p><strong>Quotation Valid Until:</strong> <script>document.write(new Date(Date.now() + 30*24*60*60*1000).toLocaleDateString());</script></p>
+        </div>
+
+        <!-- Product 1: Glue Machine -->
+        <div class="product">
+            <div class="product-header">Product 1: Glue Machine with Delivery Belt (Model: Ky-650S)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2021/01/feeder-glue-machine-1024x709.jpg" alt="Glue Machine" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/YzHoDUw9Vh8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>A glue machine with a delivery belt is used in the manufacturing or packaging industry to apply glue or other adhesive to products or packaging materials. The delivery belt is a conveyor belt that moves the product through the machine, allowing glue to be applied in a controlled and consistent manner. This machine is ideal for factory or workshop settings and can be used for various applications such as gluing boxes or attaching labels to products.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-650S</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Sheet Width</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">80-600mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Sheet Thickness</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">80-350gsm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Working Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">7-40pcs/min</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.8kw</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">3600×1300×1070mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">800Kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/glue-machine/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/YzHoDUw9Vh8" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 6,800</div>
+            </div>
+        </div>
+
+        <!-- Product 2: Box Taping Machine -->
+        <div class="product">
+            <div class="product-header">Product 2: Box Staying Machine (Model: Ky-40)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2020/12/taping-machine-1-798x1024.jpg" alt="Box Taping Machine" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/BvNrv-is6fw" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>A box staying machine is a specialized piece of equipment used in the packaging industry to create and assemble boxes or cartons. This machine is designed to fold, shape, and secure the sides of a box, ensuring that it maintains its structural integrity during the packaging process. It's commonly used in manufacturing facilities, warehouses, and packaging operations where large volumes of boxes need to be prepared quickly and efficiently.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-40</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Minimum Finished Case Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">40×40×10mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50pcs/Min</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5HP/220V</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">800×500×1400mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">200Kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/box-taping-machine/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/BvNrv-is6fw" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 1,550</div>
+            </div>
+        </div>
+
+        <!-- Product 3: V-Groove Tool -->
+        <div class="product">
+            <div class="product-header">Product 3: Manual Groove Machine (Model: Ky-52G)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2020/12/simpe-groove-machine1-1024x896.jpg" alt="V-Groove Tool" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/GDkMns08w8Q" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>A manual groove machine is a specialized tool used in the packaging and printing industry to create precise grooves or creases in cardboard, paperboard, or other similar materials. These grooves serve as fold lines, making it easier to bend and shape the material into boxes, folders, or other packaging products. The machine is operated manually, giving the user control over the depth and placement of the grooves.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-52G</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Max Groove Length</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">52cm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">60cm×40cm×30cm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50Kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/v-groove-tool/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/GDkMns08w8Q" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 980</div>
+            </div>
+        </div>
+
+        <!-- Product 4: Rigid Box Machine KY-550C -->
+        <div class="product">
+            <div class="product-header">Product 4: 2022 Version Rigid Box Forming Machine (Model: Ky-550C)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2022/06/rigid-box-forming-machine-844x1024.jpg" alt="Rigid Box Machine KY-550C" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/AEBYNGGRMWg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>The 2022 version rigid box forming machine is an advanced piece of equipment designed for the automated production of high-quality rigid boxes. This machine is ideal for packaging industries that require precision and efficiency in creating sturdy, professional-looking boxes for luxury goods, electronics, cosmetics, and other premium products. The machine features improved technology and enhanced capabilities compared to previous versions.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-550C</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Max Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">550×400×120mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Min Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">40×40×10mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">18-24pcs/min</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">1.2kw</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">L1000×W1000×H1900mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">750kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/rigid-box-machine-ky-550c/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/AEBYNGGRMWg" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 11,000</div>
+            </div>
+        </div>
+
+        <!-- Product 5: Rigid Box Hole Making Machine -->
+        <div class="product">
+            <div class="product-header">Product 5: Hole Making Machine (Model: Ky-12H)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2020/12/hole-making-machine-2-718x1024.jpg" alt="Rigid Box Hole Making Machine" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/q_Rm-nVOQO0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>The hole making machine is specifically designed for magnet closure boxes and is ideal for rigid box hole making before magnet pasting. This specialized equipment ensures precise hole placement and consistent quality, making it essential for manufacturers producing premium packaging with magnetic closures. The machine provides accurate positioning and clean hole cutting for professional results.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-12H</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Hole Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">∮8mm-21mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Hole Distance Range</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">80mm-400mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">220V 50/60Hz 2KW</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">20-30pcs/min</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">950×600×1500mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">150Kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/rigid-box-hole-making-machine/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/q_Rm-nVOQO0" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 5,800</div>
+            </div>
+        </div>
+
+        <!-- Product 6: Magnet Separator -->
+        <div class="product">
+            <div class="product-header">Product 6: Magnet Separator for Magnet Closure Box (Model: Ky-20A)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2023/02/Magnet-separator1-1024x843.jpg" alt="Magnet Separator" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/vYDPvteLTJM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>The magnet separator for magnet closure box is a specialized tool designed to separate magnets one by one, regardless of their shape or size. This device is essential in the production line of magnetic closure boxes, ensuring efficient and precise handling of magnets during the assembly process. It provides consistent separation and positioning of magnets for automated or semi-automated production workflows.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-20A</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Magnet Thickness</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Within 10mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Magnet Diameter</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">3-20mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Production Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">60pcs/min</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Tool Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">230×160×170mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Tool Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">2.5Kg</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/magnet-separator-for-magnet-closure-box/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/vYDPvteLTJM" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 580</div>
+            </div>
+        </div>
+
+        <!-- Product 7: Collapsible Box Side Wing Forming Machine -->
+        <div class="product">
+            <div class="product-header">Product 7: Collapsible Box Side Wing Forming Machine</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://cache-h.wbxcx.net/comdata/77692/product/202403221006320394E0B1B8A3502A_b.jpg" alt="Collapsible Box Side Wing Forming Machine" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/PQBwPw8swxY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>Collapsible box side wing forming machine is a new type of equipment that is economical, practical, and widely used in the manufacturing of gift boxes, primarily for the folding and wrapping of the side panels of the boxes. This specialized machine provides efficient and precise forming of side wings for collapsible boxes, making it an essential tool for packaging manufacturers.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Max Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">650×120mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Min Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">480×60mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Paper Thickness</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">100-200gsm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Cardboard Thickness</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">1-3mm</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Thickness of Side Board</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5-1mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Working Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">15-28pcs/min</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Precision</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">±0.2-0.3mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">220V/2kw</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimension</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">1200×1050×1550mm</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://www.iboxmachine.com/Rigid-collapsible-box-machine-PG9816266" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/PQBwPw8swxY" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 10,800</div>
+            </div>
+        </div>
+
+        <!-- Product 8: High-Speed Glue Painting Machine -->
+        <div class="product">
+            <div class="product-header">Product 8: High-Speed Glue Painting Machine (Model: Ky-600B)</div>
+            <div class="product-content">
+                <div class="media-container">
+                    <div class="image-section">
+                        <img src="https://postpressmachines.com/wp-content/uploads/2025/06/Box-glue-assembly-machine-1024x886.jpg" alt="High-Speed Glue Painting Machine" class="product-image">
+                    </div>
+                    <div class="video-section">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/yF48H4fAcqM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <h4>Product Description:</h4>
+                    <p>The High-Speed Glue Painting Machine is a versatile and advanced equipment designed for precise glue application on various box types and complex shapes. This machine is capable of gluing lids and bottoms (up to 60mm depth), leather cases, book boxes, folding boxes, as well as hexagonal, octagonal, and round boxes. It can apply glue in special patterns such as heart-shaped, S-shaped, circle, semicircle, oval, and five-pointed stars. The machine features full servo motor control and a five-axis servo module, ensuring stable, efficient, fast, and accurate operation.</p>
+                </div>
+                <div class="specifications">
+                    <h4>Technical Specifications:</h4>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Model</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Ky-600B / Cold glue</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Max Working Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">1000mm (L) × 550mm (W) × 150mm (H)</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Min Working Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50mm (L) × 50mm (W) × 1mm (H)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Working Speed</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Up to 45 pieces/minute (for 100mm x 100mm area)</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Max Glue Spraying Size</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">550mm × 650mm</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Power Supply</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">220V, 4.5KW</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Air Source</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.4-0.6Mpa, 42L/min</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Weight</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">650kg</td>
+                        </tr>
+                        <tr style="background-color: #f8f9fa;">
+                            <td style="border: 1px solid #ddd; padding: 8px; font-weight: bold;">Machine Dimensions</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">1950mm (L) × 1100mm (W) × 1450mm (H)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Product Link:</div>
+                        <a href="https://postpressmachines.com/Machine/high-speed-glue-painting-machine/" target="_blank">View Product Details</a>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Video Link:</div>
+                        <a href="https://youtu.be/yF48H4fAcqM" target="_blank">Watch Demo Video</a>
+                    </div>
+                </div>
+                <div class="price">CIF Price: US$ 7,500</div>
+            </div>
+        </div>
+
+        <!-- Total Section -->
+        <div class="total-section">
+            <h3>Total Quotation Summary</h3>
+            <div class="total-price">Total CIF Price: US$ 43,360</div>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="terms">
+            <h3>Terms and Conditions</h3>
+            <ul>
+                <li><strong>Delivery Time:</strong> 15 days after order confirmation</li>
+                <li><strong>Payment Terms:</strong> 50% T/T for deposit, 50% T/T prior to shipment</li>
+                <li><strong>Price Terms:</strong> CIF (Cost, Insurance, and Freight)</li>
+                <li><strong>Validity:</strong> This quotation is valid for 30 days from the date of issue</li>
+                <li><strong>Warranty:</strong> 12 months warranty for all machines</li>
+                <li><strong>Installation:</strong> Installation guidance and training available upon request</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+            <p><strong>Thank you for your interest in our products!</strong></p>
+            <p>For any questions or clarifications, please don't hesitate to contact us.</p>
+            <p><strong>Best regards,</strong><br>Sales Team<br>Post-Press Machinery Solutions</p>
+        </div>
     </div>
-  </body>
+</body>
 </html>
